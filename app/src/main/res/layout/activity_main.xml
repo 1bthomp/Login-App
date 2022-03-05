@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/aa"
     tools:context=".MainActivity">
-//sign in//
+
+    //sign in//
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,7 +19,8 @@
     android:gravity="center"
     android:id="@+id/signin"
     />
-//username//
+
+    //username//
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +35,8 @@
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
         />
-//password//
+
+    //password//
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +52,8 @@
         android:drawablePadding="20dp"
         android:inputType="textPassword"
         />
-//login button//
+
+    //login button//
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +63,8 @@
         android:backgroundTint="@color/material_on_background_emphasis_high_type"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
-//forgot password//
+
+    //forgot password//
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -70,7 +75,8 @@
     android:textColor="@color/white"
     android:layout_centerHorizontal="true"
     android:layout_margin="20dp"/>
-//Or Sign In With//
+
+    //Or Sign In With//
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -80,29 +86,39 @@
     android:textStyle="bold"
     android:layout_above="@id/socialicons"
     android:layout_centerHorizontal="true" />
-//Icons//
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:gravity="center"
-    android:id="@+id/socialicons">
+
+    //Icons//
+
+    <LinearLayout
+        android:id="@+id/socialicons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/google_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/google" /><![CDATA[
+        android:layout_margin="20dp"/>
+
+    ]]>
 
     <ImageView
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:src="@drawable/google"
-        android:layout_margin="20dp"/>
-    <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/twitter"
-        android:layout_margin="20dp"/>
-    <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/facebook"
-        android:layout_margin="20dp"/>
-</LinearLayout>
+        android:layout_margin="20dp"
+        android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/fb_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook" />
+    </LinearLayout>
 
 </RelativeLayout>
